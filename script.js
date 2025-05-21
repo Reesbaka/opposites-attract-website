@@ -1,10 +1,9 @@
 const body = document.body;
-const toggle = document.getElementById('toggle');
+const toggleBtn = document.getElementById('toggle');
 
-// Default to light mode
-body.classList.add('light');
+// Default is light mode
+body.classList.remove('dark');
 
-toggle.addEventListener('click', () => {
-  body.classList.toggle('light');
+toggleBtn.addEventListener('click', () => {
   body.classList.toggle('dark');
 });
